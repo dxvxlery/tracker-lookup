@@ -1,0 +1,28 @@
+{
+  "name": "tracker-lookup",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Right-click a member to see their discord-tracker.com profile: current voice channel, servers, people they sit with, voice events, nicknames, messages and comments.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "updateUrl": "https://raw.githubusercontent.com/dxvxlery/tracker-lookup/main/dist/TrackerLookup.plugin.js",
+  "scripts": {
+    "build": "node --no-warnings --experimental-strip-types build.ts",
+    "typecheck": "tsc",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "node --no-warnings --experimental-strip-types build.ts --test",
+    "check": "npm run typecheck && npm run lint && npm run format:check && npm test && npm run build",
+    "notes": "node --no-warnings --experimental-strip-types build.ts --notes"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "esbuild": "0.24.2",
+    "eslint": "9.17.0",
+    "eslint-config-prettier": "9.1.0",
+    "prettier": "3.4.2",
+    "typescript": "5.7.2",
+    "typescript-eslint": "8.18.1"
+  }
+}
