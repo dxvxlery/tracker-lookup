@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dxvxlery.github.io/tracker-lookup/sitemap.xml
